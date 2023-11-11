@@ -6,6 +6,10 @@ pipeline {
         maven 'maven 3.9.5'
     }
 
+    environment{
+        SONAR_SCANNER = tool 'sonarScanner'
+    }
+
     stages {
 
         stage('compilar'){
